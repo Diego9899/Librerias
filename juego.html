@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel, tijera</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="contenedorNav">
+                <div class="contenedorNavLogo">
+                    <a href="./index.html"><img src="./img/logo2.png" alt="Piedra papel tijera logo" class="imgLogo"></a>
+                </div>
+                <ul class="contenedorNavNav">
+                    <li>Inicio</li>
+                    <li>Tienda</li>
+                    <li>Sobre nosotros</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="grillaJuego">
+        <div class="contenedorUsuario"><p id="usuarioName">Usuario:</p></div>
+        <div class="contenedorPuntos"><p id="score">Puntos:</p></div>
+        
+        <div class="contenedorJuego">
+            <div class="contenedorJuegoFlex--row">
+                <div class="contenedorJuegoFlex--column">
+                    <div id="maquina"><span>&#128187;</span></div>
+                    <div><p id="maquinaLog"></p></div>
+                </div>
+                <div class="contenedorJuegoFlex--column">
+                    <div id="jugador"><span>&#128100;</span></div>
+                    <div><p id="jugadorLog"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorResultado">
+            <p id="resultadoLog"></p>
+        </div>
+        <div class="contenedorBotones">
+            <button id="piedra">PIEDRA</button>
+            <button id="papel">PAPEL</button>
+            <button id="tijera">TIJERA</button>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Desarrollado por Diego Brossard</p>
+        </div>
+    </footer>
+    <script src="./script.js" type="module"></script>
+    <script defer src="./mainYT.js" type="text/javascript"></script>
+</body>
+
+</html>
