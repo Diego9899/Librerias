@@ -8,9 +8,11 @@ let score = document.querySelector("#score");
 let jugadorLog = document.querySelector("#jugadorLog")
 let maquinaLog = document.querySelector("#maquinaLog")
 let resultadoLog = document.querySelector("#resultadoLog")
+const usuarioImagenPerfil = document.querySelector("#usuarioImagenPerfil")
+const usuarioName = document.querySelector("#usuarioName")
 
-
-
+usuarioImagenPerfil.innerHTML = `<span>${localStorage.getItem("perfil")}</span>`
+usuarioName.innerHTML = `Jugador: ${localStorage.getItem("nombre")}`
 // Eventos click para los botones con los que se juega
 botonpiedra.onclick = function() {opcion(0)};
 botonpapel.onclick = function () {opcion(1)};

@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
     <link rel="fonts" href="./XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmdTQ3jw.woff2">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
@@ -32,19 +33,27 @@
         </nav>
     </header>
     <main class="contenedorIndexUsuario">
+        <div class="carta">
+            <span id="usuarioImagen"></span>
+            <h2 id="usuarioNombre"></h2>
+        </div>
         <form action="" id="formUsuario" class="formulario">
             <input type="text" placeholder="Nombre" id="areaUsuario" class="formUsuarioTexto">
             <input type="submit" value="Enviar" class="boton" id="botonUsuario">
-            <a href="juego.html" class="boton">JUGAR</a>
+            <button class="boton" id="botonPlay"><a href="juego.html">JUGAR</a></button>
         </form>
     </main>
+    <div id="listadoPerfiles">
+        <button class="boton"><span>&#9917;</span></button>
+        <button class="boton"><span>&#9918;</span></button>
+    </div>
     <footer class="footerIndex">
         <div>
             <p>Desarrollado por Diego Brossard</p>
         </div>
     </footer>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script defer src="./script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script  src="./script.js"></script>
 </body>
 
 </html>

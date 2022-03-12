@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "nombre": "Mono",
+      "imagen": "&#128053;"
+    },
+    {
+    "id": 2,
+    "nombre": "Luna",
+    "imagen": "&#127765;"
+      },
+    {
+    "id": 3,
+    "nombre": "Hamburguesa",
+    "imagen": "&#127828;"
+    },
+    {
+    "id": 4,
+    "nombre": "Fútbol",
+    "imagen": "&#9917;"
+    },
+    {
+    "id": 5,
+    "nombre": "Baseball",
+    "imagen": "&#9918;"
+    }
+]
