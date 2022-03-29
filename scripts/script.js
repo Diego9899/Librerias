@@ -1,16 +1,17 @@
-
-
+// Variables DOM
 const listadoPerfiles = document.querySelector("#listadoPerfiles")
 const usuarioPerfil = document.querySelector("#usuarioImagen")
 const formUsuario = document.querySelector("#formUsuario")
 const botonUsuario = document.querySelector("#botonUsuario")
 const nombreUsuario = document.querySelector("#areaUsuario")
 
+// Obtengo el  nombre del usuario y lo guardo en el LocalStorage
 formUsuario.addEventListener("submit", (e) =>{
     e.preventDefault();
     datos = formUsuario.children[0].value
     localStorage.setItem("nombre", datos)
 })
+// Pinto la lista de perfiles que puede utilizar el usuario
 const pintarPerfiles = (perfiles) => {
     listadoPerfiles.innerHTML= "";
     for(const perfil of perfiles){
@@ -26,7 +27,7 @@ const pintarPerfiles = (perfiles) => {
     listadoPerfiles.appendChild(listadoPefiles)
     }
 }
-
+// Los inserto a través de un archivo Json
 const insertarPerfiles = () =>{
     listadoPerfiles.innerHTML= "<p>Cargando...</p>";
     return fetch ("perfiles.json")

@@ -25,6 +25,10 @@ header{
   background-color: rgb(223, 68, 68);
   display: flex;
 }
+.titulo{
+  margin: 50px auto;
+  text-align: center;
+}
 .contenedorNav{
   display: flex;
   flex-direction: row;

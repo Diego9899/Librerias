@@ -1,6 +1,5 @@
 
-
-// Variables DOM de los botones con los que se juega (piedra, papel y tijera)
+// Variables DOM
 let botonpiedra = document.querySelector("#piedra")
 let botonpapel = document.querySelector("#papel")
 let botontijera = document.querySelector("#tijera")
@@ -11,8 +10,10 @@ let resultadoLog = document.querySelector("#resultadoLog")
 const usuarioImagenPerfil = document.querySelector("#usuarioImagenPerfil")
 const usuarioName = document.querySelector("#usuarioName")
 
+// Se obtiene la imagen de perfil elegida por el Usuario
 usuarioImagenPerfil.innerHTML = `<span>${localStorage.getItem("perfil")}</span>`
 usuarioName.innerHTML = `Jugador: ${localStorage.getItem("nombre")}`
+
 // Eventos click para los botones con los que se juega
 botonpiedra.onclick = function() {opcion(0)};
 botonpapel.onclick = function () {opcion(1)};
@@ -30,7 +31,7 @@ function opcion(miOpcion){
     const opciones = ["piedra","papel","tijera"];
     
     /* Se declara una matriz de datos que contiene los valores 0, 1, 2 pertenecientes
-    a las opciones piedra =0, papel =1, tijera =2 y los resultados empate =0, victoria =1, derrota=2*/
+    a las opciones: piedra =0, papel =1, tijera =2 y los resultados: empate =0, victoria =1, derrota=2*/
     const jugadasPosibles = [
                             [0,1,2],
                             [2,0,1],

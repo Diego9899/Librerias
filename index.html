@@ -13,8 +13,8 @@
     <link rel="fonts" href="./XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmdTQ3jw.woff2">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="bodyColor">
@@ -24,14 +24,12 @@
                 <div class="contenedorNavLogo">
                     <a href="./index.html"><img src="./img/logo2.png" alt="Piedra papel tijera logo" class="imgLogo"></a>
                 </div>
-                <ul class="contenedorNavNav">
-                    <li>Inicio</li>
-                    <li>Tienda</li>
-                    <li>Sobre nosotros</li>
-                </ul>
             </div>
         </nav>
     </header>
+    <div class="titulo">
+        <h1>Elije tu emoji, tu nombre y ¡a jugar!</h1>
+    </div>
     <main class="contenedorIndexUsuario">
         <div class="carta">
             <span id="usuarioImagen"></span>
@@ -39,8 +37,8 @@
         </div>
         <form action="" id="formUsuario" class="formulario">
             <input type="text" placeholder="Nombre" id="areaUsuario" class="formUsuarioTexto">
-            <input type="submit" value="Enviar" class="boton" id="botonUsuario">
-            <button class="boton" id="botonPlay"><a href="juego.html">JUGAR</a></button>
+            <input type="submit" value="Validar" class="boton" id="botonUsuario">
+            <button class="boton" id="botonPlay"><a href="./juego.html">JUGAR</a></button>
         </form>
     </main>
     <div id="listadoPerfiles">
@@ -49,11 +47,10 @@
     </div>
     <footer class="footerIndex">
         <div>
-            <p>Desarrollado por Diego Brossard</p>
+            <p>Desarrollado por Diego Brossard - Coder House 2022</p>
         </div>
     </footer>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script  src="./script.js"></script>
+    <script defer src="./scripts/script.js"></script>
 </body>
-
 </html>
